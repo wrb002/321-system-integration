@@ -4,7 +4,6 @@
     <title>Simple Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-
     <style>
             html, body {
                 height: 100%;
@@ -15,21 +14,13 @@
                 height: 100%;
             }
         </style>
-    <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
-
-
-
-
-    </script>
-
-    <button id="submit">Get External Content</button>
-    <div id="map"></div>
+<script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+<button id="submit">Get External Content</button>
+<div id="map"></div>
 </head>
 <body>
-
-
-
 <script>
  var map;
     function initMap() {
@@ -38,7 +29,7 @@
             zoom: 12
         });
         $(document).ready(function(){
-             $("#submit").click(function(){alert('I am here');
+             $("#submit").click(function(){alert('the function is working');
                  $.ajax( {
                     url:"http://api.geonames.org/postalCodeSearchJSON?country=AU&postalcode=4556&maxRows=10&username=wangmz",
                     method: "get",
@@ -70,10 +61,6 @@
 
         });
 
-                    marker.addListener('click', function() {
-                    infowindow.open(map, marker);
-                    });
-                    map.setCenter(marker.getPosition());
     }
 </script>
 
